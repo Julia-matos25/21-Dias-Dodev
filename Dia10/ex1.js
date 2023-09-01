@@ -1,3 +1,4 @@
+//!Parte 1 
 //CRIANDO VARIÁVEIS
 let arrayNumero = []
 let indicesEncontrados = []
@@ -20,3 +21,21 @@ for (let i= 0; i < arrayNumero.length; i++) {
 }
 
 console.log("O número inserido aparece no índice: " + indicesEncontrados)
+
+//!Parte 2 
+let pedirNumero = []
+let arrayInvertido = []
+ for (let y = 0; y < 5; y++) {
+    pedirNumeroUsuario = parseInt(prompt("INSIRA 5 NÚMEROS"))
+    pedirNumero[y] = pedirNumeroUsuario
+ }
+ 
+console.log("Array original: " + pedirNumero)
+ 
+//invertendo o array
+let invertir = 4
+for (let j = 0; j < 5; j++) {
+    arrayInvertido[j] = pedirNumero[invertir]
+    invertir--
+}
+console.log("Array invertido: " + arrayInvertido)
